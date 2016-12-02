@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testng-listener" parallel="false">
+	<listeners>
+		<listener class-name="org.jagdeep.example.test.litener.TestExecutionListener" />
+	</listeners>
+	<test name="addition" preserve-order="true">
+		<classes>
+			<class name="org.jagdeep.example.AdditionTest">
+				<methods>
+					<include name="additionTest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
